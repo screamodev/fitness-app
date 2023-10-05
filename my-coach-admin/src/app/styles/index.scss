@@ -1,0 +1,9 @@
+@import 'tailwind.scss';
+
+body {
+  @apply bg-gray-light dark:bg-deep-black font-sans;
+
+  .el-loading-mask {
+    @apply z-40;
+  }
+}

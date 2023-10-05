@@ -1,0 +1,7 @@
+.stepper-footer {
+  @apply flex flex-row-reverse justify-between;
+
+  .el-button {
+    @apply ml-0 md:text-xs;
+  }
+}

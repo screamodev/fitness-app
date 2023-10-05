@@ -1,0 +1,11 @@
+.logout {
+  @apply ml-6 flex sm:ml-4;
+
+  .el-icon {
+    @apply w-6 h-6;
+
+    .icon {
+      @apply w-6 h-6 rotate-180 fill-blue-dark dark:fill-white dark:hover:fill-gray-200 hover:fill-gray-600;
+    }
+  }
+}

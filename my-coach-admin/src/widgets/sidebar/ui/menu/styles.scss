@@ -1,0 +1,23 @@
+.menu-wrapper {
+  @apply border-0;
+
+  .menu-item-active {
+    @apply bg-orange-base bg-opacity-10;
+  }
+
+  .menu-item-route {
+    @apply flex items-center w-full h-full;
+
+    &-content {
+      @apply w-full h-full flex items-center;
+
+      .menu-item-icon {
+        @apply w-4 h-4 absolute;
+      }
+
+      .menu-item-text {
+        @apply ml-11;
+      }
+    }
+  }
+}

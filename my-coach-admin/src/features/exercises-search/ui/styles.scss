@@ -1,0 +1,7 @@
+.exercises-search {
+  @apply flex lg:mt-4;
+
+  .el-form-item.asterisk-left {
+    @apply mb-0 w-full;
+  }
+}

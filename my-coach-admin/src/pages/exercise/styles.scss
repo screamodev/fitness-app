@@ -1,0 +1,11 @@
+.container {
+  @apply w-full h-full;
+
+  .el-loading-mask {
+    @apply rounded-lg bg-white dark:bg-brown-dark;
+  }
+
+  .exercise-info {
+    @apply rounded-lg shadow-md bg-white dark:bg-brown-dark p-7 mb-8;
+  }
+}

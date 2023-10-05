@@ -1,0 +1,29 @@
+.select-lang {
+  @apply flex;
+
+  &-icon {
+    @apply w-5 h-5 dark:fill-white;
+  }
+
+  &-text {
+    @apply text-sm text-blue-dark dark:text-white sm:text-xs;
+  }
+}
+
+.select-options {
+  @apply w-32;
+}
+
+.el-select-v2__selected-item.el-select-v2__input-wrapper,
+.el-icon.el-select-v2__caret.el-input__icon,
+.el-select-v2__placeholder {
+  @apply hidden;
+}
+
+.el-select-v2__wrapper.el-tooltip__trigger {
+  @apply border-none bg-transparent w-0;
+}
+
+.el-vl__window.el-select-dropdown__list {
+  @apply w-full #{!important};
+}

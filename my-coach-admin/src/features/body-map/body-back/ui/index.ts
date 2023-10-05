@@ -1,0 +1,10 @@
+export { default as Calves } from './calves/index.vue';
+export { default as Shoulders } from './shoulders/index.vue';
+export { default as Forearms } from './forearms/index.vue';
+export { default as Glutes } from './glutes/index.vue';
+export { default as Hamstrings } from './hamstrings/index.vue';
+export { default as Lats } from './lats/index.vue';
+export { default as Lowerback } from './lowerback/index.vue';
+export { default as Trapeze } from './trapeze/index.vue';
+export { default as TrapezeMiddle } from './trapeze-middle/index.vue';
+export { default as Triceps } from './triceps/index.vue';

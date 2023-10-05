@@ -1,0 +1,29 @@
+.login-wrap-form {
+  @apply bg-white rounded-xl px-6 mx-5 min-w-[320px] flex flex-col justify-center dark:bg-blue-dark;
+
+  &-title {
+    @apply text-2xl text-center mt-8 mb-4 sm:text-xl;
+  }
+
+  .el-form--label-top .el-form-item .el-form-item__label {
+    @apply sm:text-xs sm:mb-1;
+  }
+
+  .el-input__inner {
+    @apply custom-shadow dark:custom-shadow-dark;
+  }
+}
+
+.input-icon {
+  @apply w-3 h-3;
+}
+
+.button-wrapper {
+  .el-form-item__content {
+    @apply flex justify-center;
+  }
+}
+
+.login-wrap-form {
+  @apply sm:min-w-[220px] sm:mx-5;
+}

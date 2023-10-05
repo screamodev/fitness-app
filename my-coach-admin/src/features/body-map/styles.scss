@@ -1,0 +1,11 @@
+.body-map-wrapper {
+  @apply h-fit flex mr-[60px] xl:mr-0 xl:justify-center sm:flex-col sm:items-center;
+
+  &-body {
+    @apply w-[230px] mr-8 sm:w-3/4 sm:mr-0 sm:mb-5;
+  }
+}
+
+.body-map-wrapper > div {
+  @apply last:mr-0;
+}

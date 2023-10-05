@@ -1,0 +1,11 @@
+.container {
+  @apply w-full m-0;
+
+  .el-card {
+    @apply border-none bg-transparent;
+  }
+
+  .el-card__body {
+    @apply px-0;
+  }
+}

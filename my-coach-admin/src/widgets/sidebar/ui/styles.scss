@@ -1,0 +1,11 @@
+.sidebar {
+  @apply relative min-h-screen bg-white dark:bg-brown-dark border-r border-gray-300 dark:border-black transition-all duration-200 overflow-hidden;
+
+  .collapse-button {
+    @apply absolute top-5 left-1/2 transform -translate-x-1/2;
+  }
+}
+
+.overlay-sidebar {
+  @apply absolute z-50 left-0 top-0 bottom-0;
+}

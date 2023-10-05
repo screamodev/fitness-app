@@ -1,0 +1,27 @@
+.not-found-wrapper {
+  @apply h-screen w-full flex items-center justify-center bg-white-light pr-36 sm:pr-16 md:pr-24;
+
+  &-image {
+    @apply w-96 h-full flex items-center sm:w-48 md:w-64;
+
+    &-png {
+      @apply rotate-90 object-cover min-w-full;
+    }
+  }
+
+  &-content {
+    @apply flex flex-col items-center;
+
+    &-header {
+      @apply text-6xl font-bold mb-3 sm:text-xl md:text-2xl;
+    }
+
+    &-text {
+      @apply text-2xl mb-8 sm:text-sm md:text-base;
+    }
+
+    &-link {
+      @apply underline hover:text-amber-500 hover:underline sm:text-xs md:text-sm;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+$--colors: (
+  'primary': (
+    'base': #f3a32a,
+  ),
+  'danger': (
+    'base': #ff3b30,
+  ),
+);
+
+$--text-color: (
+  'primary': #171717,
+  'secondary': #5d5d5d,
+);
+
+$--bg-color: (
+  'page': #f8f8f8,
+);
+
+$--border-color: (
+  '': #dcdfe6,
+);
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: $--colors,
+  $text-color: $--text-color,
+  $bg-color: $--bg-color,
+  $border-color: $--border-color
+);
+
+@use 'dark-theme.scss' as *;
+
+@import 'element-plus/theme-chalk/src/message-box.scss';
+@import 'element-plus/theme-chalk/src/notification.scss';
+
+$primary-color: map-get(map-get($--colors, 'primary'), 'base');
+$danger-color: map-get(map-get($--colors, 'danger'), 'base');
+
+.el-button:hover:not(.is-disabled):not(.el-button--primary):not(.el-button--danger),
+.el-button:focus:not(.is-disabled):not(.el-button--primary):not(.el-button--danger) {
+  background-color: transparent;
+  border-color: var(--el-border-color);
+  color: var(--el-text-color-regular);
+}
+
+.el-button--primary:focus:not(.is-disabled) {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.el-button:hover:not(.is-disabled):not(.el-button--primary):not(.el-button--danger),
+.el-button:focus:hover:not(.is-disabled) {
+  opacity: 0.7;
+}
+
+.el-button:focus:active:not(.is-disabled) {
+  opacity: 0.8;
+}

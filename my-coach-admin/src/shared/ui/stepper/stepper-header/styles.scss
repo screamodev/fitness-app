@@ -1,0 +1,7 @@
+.stepper-header {
+  @apply flex justify-center h-full px-5;
+
+  &-title {
+    @apply text-xl sm:text-sm sm:whitespace-nowrap;
+  }
+}

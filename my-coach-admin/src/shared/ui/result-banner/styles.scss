@@ -1,0 +1,7 @@
+.result-banner-wrapper {
+  @apply mx-0 my-auto h-full w-full;
+
+  &-content {
+    @apply h-full;
+  }
+}

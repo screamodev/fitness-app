@@ -1,0 +1,11 @@
+.el-header {
+  @apply p-0;
+}
+
+.middle-screen {
+  @apply pl-[64px] relative;
+}
+
+.el-loading-mask {
+  @apply bg-white dark:bg-brown-dark;
+}

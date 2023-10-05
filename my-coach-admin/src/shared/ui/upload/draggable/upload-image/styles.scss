@@ -1,0 +1,26 @@
+.upload {
+  @apply mt-8;
+
+  .el-upload-list.el-upload-list--picture-card {
+    @apply w-full flex justify-center;
+  }
+
+  .el-upload.el-upload--picture-card.is-drag {
+    @apply w-full border-none;
+  }
+
+  .el-upload-dragger {
+    @apply p-0 h-full flex flex-col items-center justify-center dark:bg-brown-dark;
+  }
+
+  .el-upload-list__item.is-ready,
+  .el-upload-list__item.is-success {
+    @apply w-72 h-48 sm:w-full;
+  }
+}
+
+.upload.upload-hidden
+  > .el-upload-list.el-upload-list--picture-card
+  > .el-upload.el-upload--picture-card.is-drag {
+  @apply hidden;
+}

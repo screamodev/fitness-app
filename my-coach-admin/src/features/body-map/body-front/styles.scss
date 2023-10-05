@@ -1,0 +1,15 @@
+.body-map-muscle {
+  @apply fill-body-light hover:cursor-pointer hover:fill-red-600 hover:duration-200 dark:fill-neutral-700 dark:hover:fill-red-600;
+}
+
+.body-map-muscle.main-muscle-selected {
+  @apply fill-orange-400 dark:fill-amber-700;
+}
+
+.body-map-muscle.additional-muscle-selected {
+  @apply fill-orange-200 dark:fill-amber-500;
+}
+
+.body-line {
+  @apply fill-black dark:fill-gray-500;
+}

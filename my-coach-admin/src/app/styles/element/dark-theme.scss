@@ -1,0 +1,27 @@
+$--colors: (
+  'danger': (
+    'base': #ff453a,
+  ),
+);
+
+$--text-color: (
+  'primary': #f2f2f2,
+  'secondary': #b0b0b0,
+);
+
+$--bg-color: (
+  'page': #1f1f1f,
+);
+
+$--border-color: (
+  '': #404040,
+);
+
+@forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+  $colors: $--colors,
+  $text-color: $--text-color,
+  $bg-color: $--bg-color,
+  $border-color: $--border-color
+);
+
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;

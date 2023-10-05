@@ -1,0 +1,25 @@
+stages:
+  - deploy
+
+before_script:
+  - apt-get update -qq
+  - apt-get install -qq git openssh-client
+
+deploy:
+  stage: deploy
+  image: ubuntu:20.04
+  tags:
+    - deploy
+  only:
+    - develop
+  script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_SERVER_KEY")
+    - ssh -oStrictHostKeyChecking=no -p$SSH_SERVER_PORT $SSH_SERVER_USER@$SSH_SERVER_IP "
+      cd ~/my-coach-api/ &&
+      git checkout develop &&
+      git pull origin HEAD &&
+      npm ci &&
+      npm run migrate:deploy &&
+      npm run build &&
+      pm2 restart all && exit"

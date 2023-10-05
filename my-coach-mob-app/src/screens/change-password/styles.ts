@@ -1,0 +1,10 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 18,
+    paddingTop: 8,
+    paddingBottom: 40,
+  },
+});

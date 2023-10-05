@@ -1,0 +1,35 @@
+.exercise-manage {
+  @apply flex max-h-80 shadow-md mb-8 rounded-lg bg-white dark:bg-brown-dark;
+
+  .image-container {
+    @apply relative min-w-fit overflow-hidden;
+
+    .image {
+      @apply w-full h-full rounded-lg;
+    }
+  }
+
+  .content {
+    @apply flex justify-between w-full p-4;
+
+    .main-info {
+      @apply flex flex-col;
+
+      .title {
+        @apply self-start mb-5;
+      }
+    }
+
+    .controls {
+      @apply flex flex-col;
+    }
+  }
+
+  .content-wide {
+    @apply w-full;
+  }
+}
+
+.image-container:hover .icon {
+  @apply opacity-100;
+}

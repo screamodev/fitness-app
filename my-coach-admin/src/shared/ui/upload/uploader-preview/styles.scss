@@ -1,0 +1,15 @@
+.dialog {
+  @apply xl:w-fit md:my-12;
+
+  .el-dialog__body {
+    @apply flex justify-center;
+  }
+}
+
+.el-overlay-dialog {
+  @apply xl:px-2;
+}
+
+i.el-icon--close-tip {
+  @apply hidden #{!important};
+}
