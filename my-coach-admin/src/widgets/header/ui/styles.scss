@@ -1,0 +1,11 @@
+.header-wrapper {
+  @apply h-16 p-5 flex justify-between items-center border-b border-gray-300 bg-white dark:border-gray-dark dark:bg-inherit sm:p-2;
+
+  &-title {
+    @apply text-base sm:text-sm;
+  }
+
+  &-content {
+    @apply flex items-center;
+  }
+}

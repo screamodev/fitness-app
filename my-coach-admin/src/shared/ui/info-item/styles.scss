@@ -1,0 +1,19 @@
+.info-item-horizontal {
+  @apply flex items-center my-2.5;
+
+  .info-item-title {
+    @apply mr-2;
+  }
+}
+
+.info-item-vertical {
+  @apply flex flex-col my-6 first:mt-0 last:mb-0;
+
+  .info-item-title {
+    @apply self-start mb-2;
+  }
+
+  .info-item-content {
+    @apply self-start break-normal whitespace-normal;
+  }
+}

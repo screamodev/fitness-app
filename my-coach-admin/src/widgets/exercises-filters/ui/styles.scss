@@ -1,0 +1,25 @@
+.filter-form {
+  @apply bg-white flex rounded-lg p-4 my-5 dark:bg-black-dark xl:flex-col;
+
+  &-tags {
+    @apply flex my-5 flex-wrap;
+  }
+
+  .buttons-filter {
+    @apply items-end mb-0;
+
+    .el-form-item__content {
+      @apply flex-col items-end xl:flex-row xl:mt-4;
+    }
+  }
+
+  .buttons-filter .el-form-item__content {
+    .apply-filter {
+      @apply ml-0;
+    }
+
+    .clear-filter {
+      @apply xl:mr-3;
+    }
+  }
+}

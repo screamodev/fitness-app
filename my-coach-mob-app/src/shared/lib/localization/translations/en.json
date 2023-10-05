@@ -1,0 +1,292 @@
+{
+  "en": {
+    "intro": {
+      "getStartedBtn": "Get started",
+      "signInLinkText": "Already have an account?",
+      "signUpLinkText": "Don't have an account?",
+      "signInBtn": "Sign In",
+      "signUpBtn": "Sign Up",
+      "welcomeSlide": {
+        "title": "Welcome to MyCoach!",
+        "description": "Start recording your workouts right now!\nPlan, develop, achieve goals, share progress.\nBecome a better version of yourself!"
+      },
+      "coachSlide": {
+        "title": "Find your coach",
+        "description": "Plan your workouts with your personal coach.\nFind the best one in your area."
+      },
+      "communitySlide": {
+        "title": "Join the community",
+        "description": "Connect with the sports community.\nShare your best practices, tips and successes."
+      }
+    },
+    "signIn": {
+      "title": "Sign In",
+      "signUpLinkText": "Don't have an account?",
+      "signUpBtn": "Sign Up",
+      "forgotPasswordLinkText": "Forgot password?",
+      "signInWith": "Or Sign In with"
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "signUpBtn": "Sign Up",
+      "signInLinkText": "Already have an account?",
+      "signInBtn": "Sign In",
+      "signUpWith": "Or Sign Up with"
+    },
+    "addUserInfo": {
+      "genderStep": {
+        "title": "Please select your gender",
+        "text": "Let's get to know you better. This will help you better track your progress."
+      },
+      "roleStep": {
+        "title": "Choose your role",
+        "description": "Please note that once you have registered, you will not be able to change your role.",
+        "trainee": {
+          "title": "Trainee",
+          "description": "You can record your own progress, manage your calendar, communicate with a coach or in the community."
+        },
+        "coach": {
+          "title": "Coach",
+          "description": "You have the functionality of a student, you can follow the progress of other students, send invitations to training."
+        }
+      },
+      "heightStep": {
+        "title": "Enter your height",
+        "text": "It is better to measure height in the morning, since by the evening a person’s height may decrease.",
+        "unit": "cm"
+      },
+      "weightStep": {
+        "title": "Enter your weight",
+        "text": "Floor scales may show an incorrect result if the floor surface is uneven, so the scales must stand in the same place.",
+        "unit": "kg"
+      },
+      "usernameStep": {
+        "title": "Enter a username",
+        "text": "You need to come up with a username. You can change it at any time in the Settings."
+      },
+      "avatarStep": {
+        "title": "Upload your avatar",
+        "text": "Click to upload your avatar. You can do it later in the Settings."
+      }
+    },
+    "coaches": {
+      "title": "Coaches"
+    },
+    "community": {
+      "title": "Community"
+    },
+    "diary": {
+      "title": "Diary"
+    },
+    "settings": {
+      "title": "Settings",
+      "editProfile": {
+        "title": "Edit Profile"
+      },
+      "changePassword": {
+        "title": "Change Password"
+      },
+      "theme": {
+        "title": "Theme",
+        "variant": {
+          "auto": "Auto",
+          "dark": "Dark",
+          "light": "Light"
+        }
+      },
+      "language": {
+        "title": "Language",
+        "variant": {
+          "en": "English",
+          "uk": "Українська"
+        }
+      },
+      "notifications": {
+        "title": "Notifications"
+      },
+      "deleteAccount": {
+        "title": "Delete Account",
+        "modal": {
+          "title": "Delete account",
+          "description": "Do you really want to delete your account?",
+          "confirm": "Yes",
+          "cancel": "No, i don't"
+        }
+      },
+      "signOut": {
+        "title": "Sign Out"
+      }
+    },
+    "notFound": {
+      "title": "Oops!",
+      "heading": "This screen doesn't exist",
+      "btn": "Go to main screen!"
+    },
+    "errors": {
+      "email": {
+        "required": "Enter your email address",
+        "invalid": "Invalid email address. Please correct and try again",
+        "unavailable": "Sorry, this email address has already been taken"
+      },
+      "password": {
+        "required": "Enter your password",
+        "createRequired": "Create password",
+        "invalid": "Minimum 6 characters: uppercase and lowercase characters and numbers.",
+        "confirmRequired": "Type your password again",
+        "notMatch": "Passwords must match"
+      },
+      "fullName": {
+        "required": "Enter your full name",
+        "tooShort": "Full name is too short - should be 1 chars minimum",
+        "tooLong": "Full name should have maximum 50 characters",
+        "invalid": "Full name can only contain cyrillic and latin letters or '-'"
+      },
+      "username": {
+        "required": "Enter your username",
+        "invalid": "Username can contain only lowercase letters, numbers, and the following symbols: '_', '.'.",
+        "tooShort": "Username must be at least 3 characters",
+        "tooLong": "Username can't be more than 20 characters",
+        "unavailable": "Sorry, this username has already been taken"
+      },
+      "height": {
+        "min": "Height must be greater than or equal to 70",
+        "max": "Height must be less than or equal to 250"
+      },
+      "weight": {
+        "min": "Weight must be greater than or equal to 30",
+        "max": "Weight must be less than or equal to 250"
+      }
+    },
+    "labels": {
+      "user": {
+        "fullName": "Full name",
+        "username": "Username",
+        "password": "Password",
+        "repeatedPassword": "Confirm password",
+        "email": "Email",
+        "height": "Height",
+        "weight": "Weight"
+      },
+      "password": {
+        "current": "Enter the current password",
+        "new": "Enter a new password",
+        "confirm": "Confirm a new password"
+      }
+    },
+    "placeholders": {
+      "user": {
+        "fullName": "Your full name",
+        "password": "Your password",
+        "repeatedPassword": "Repeat your password",
+        "email": "Your email",
+        "username": "username"
+      },
+      "password": {
+        "current": "Current password",
+        "new": "New password",
+        "confirm": "Confirm a new password"
+      },
+      "exercises": {
+        "search": "Search"
+      }
+    },
+    "buttons": {
+      "skip": "Skip",
+      "continue": "Continue",
+      "start": "Start",
+      "done": "Done",
+      "save": "Save"
+    },
+    "alerts": {
+      "unauthorized": {
+        "title": "Unauthorized",
+        "message": "Invalid credentials."
+      },
+      "unregistered": {
+        "title": "Unregistered",
+        "message": "Unable to create an account."
+      },
+      "addUserInfoFailed": {
+        "title": "Failed to add information",
+        "message": "Sorry, we couldn't add the information you provided. Please double-check that all the information is correct and try again."
+      },
+      "editUserInfoFailed": {
+        "title": "Failed to edit information",
+        "message": "Sorry, we couldn't edit the information you provided. Please double-check that all the information is correct and try again."
+      },
+      "deleteAccountFailed": {
+        "title": "Failed to delete your account",
+        "message": "Sorry, we couldn't delete your account. Try again later."
+      },
+      "deleteAvatarFailed": {
+        "title": "Failed to delete your avatar",
+        "message": "Sorry, we couldn't delete your avatar. Try again later."
+      },
+      "changePasswordSucceeded": {
+        "title": "Password successfully changed",
+        "message": "Your password has been changed."
+      },
+      "changePasswordFailed": {
+        "title": "Failed to change password",
+        "message": "The current password is incorrect."
+      },
+      "galleryAccess": {
+        "title": "Access is denied",
+        "message": "You've refused to allow this app to access your photos!"
+      },
+      "cameraAccess": {
+        "title": "Access is denied",
+        "message": "You've refused to allow this app to access your camera!"
+      }
+    },
+    "modals": {
+      "deleteImage": {
+        "title": "Delete image",
+        "description": "Do you really want to delete your image?",
+        "confirm": "Yes",
+        "cancel": "No, i don't"
+      }
+    },
+    "calendar": {
+      "today": "Today"
+    },
+    "training": {
+      "title": "Add a training",
+      "selectTime": "Select Time",
+      "empty": {
+        "title": "There are no trainings",
+        "description": "Your workouts will be displayed here"
+      },
+      "buttons": {
+        "schedule": "Schedule a training",
+        "add": "Add a training"
+      }
+    },
+    "exercises": {
+      "empty": {
+        "added": {
+          "title": "No exercises added",
+          "description": "Select and add exercises to display here"
+        },
+        "search": {
+          "title": "No exercises found",
+          "description": "Please change your search query to display here"
+        },
+        "info": {
+          "title": "There is no additional information",
+          "description": "Choose another exercise"
+        }
+      },
+      "button": {
+        "add": "Add exercises"
+      },
+      "instruction": "Instruction"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "openGallery": "Open gallery",
+      "makePhoto": "Make photo"
+    }
+  }
+}

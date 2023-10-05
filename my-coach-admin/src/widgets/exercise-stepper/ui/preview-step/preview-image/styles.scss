@@ -1,0 +1,27 @@
+.preview-image-wrapper {
+  @apply mr-9 flex xl:mr-0 xl:mb-5 xl:justify-center;
+
+  &-content {
+    @apply relative;
+
+    &-preview {
+      @apply flex justify-center h-48 w-[380px] rounded-lg border border-gray-300 md:w-[288px] md:h-40 overflow-hidden;
+
+      &-default-image:before {
+        @apply content-[''] absolute dark:bg-gray-neutral opacity-70 top-0 bottom-0 right-0 left-0;
+      }
+    }
+
+    &-preview {
+      @apply sm:w-[208px] sm:h-28;
+    }
+
+    &-button {
+      @apply absolute top-px right-px;
+    }
+  }
+}
+
+.preview-image-wrapper-content-preview:hover .icon {
+  @apply opacity-100 bottom-16 sm:bottom-8;
+}

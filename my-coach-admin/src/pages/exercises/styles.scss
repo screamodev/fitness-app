@@ -1,0 +1,29 @@
+.exercises-page-actions {
+  @apply flex justify-between lg:flex-col;
+
+  &-buttons {
+    @apply flex;
+
+    .toggle-filters {
+      @apply mt-0 w-fit mr-3;
+
+      span {
+        @apply sm:text-[0px];
+      }
+
+      i {
+        @apply sm:text-base sm:mr-0;
+      }
+    }
+
+    .create-exercise-button {
+      span {
+        @apply sm:text-[0px];
+      }
+
+      i {
+        @apply sm:text-base sm:mr-0;
+      }
+    }
+  }
+}

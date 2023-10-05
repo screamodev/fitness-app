@@ -1,0 +1,187 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input AddMuscleInput {
+  id: Float!
+  isPrimary: Boolean
+}
+
+input AddUserInfo {
+  avatar: Upload
+  gender: String!
+  height: Float
+  role: String!
+  username: String!
+  weight: Float
+}
+
+type Avatar {
+  createdAt: DateTime!
+  id: ID!
+  updatedAt: DateTime!
+  url: String!
+}
+
+input ChangePasswordInput {
+  newPassword: String!
+  oldPassword: String!
+}
+
+input ChangeUserInfo {
+  avatar: Upload
+  email: String
+  fullName: String
+  height: Float
+  username: String
+  weight: Float
+}
+
+input CreateExerciseInput {
+  images: [Upload!]
+  instruction: String
+  instructionUk: String
+  muscles: [AddMuscleInput!]!
+  name: String!
+  nameUk: String!
+  primaryImage: Upload
+  typeId: String!
+  video: Upload
+}
+
+input CreateSetInput {
+  exerciseId: Int!
+  reps: Float
+  time: Float
+  weight: Float
+}
+
+input CreateTrainingInput {
+  appointedAt: DateTime!
+  sets: [CreateSetInput!]!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Exercise {
+  createdAt: DateTime!
+  id: ID!
+  instruction: String
+  instructionUk: String
+  medias: [Media!]
+  muscles: [Muscle!]!
+  name: String!
+  nameUk: String!
+  primaryImage: Media
+  type: ExerciseType!
+  updatedAt: DateTime!
+}
+
+type ExerciseType {
+  createdAt: DateTime!
+  id: ID!
+  name: String!
+  nameUk: String!
+  updatedAt: DateTime!
+}
+
+input GetExercisesInput {
+  exercisesIds: [Int!]
+  musclesIds: [Int!]
+  page: Int
+  searchQuery: String
+  size: Int
+  typesIds: [Int!]
+}
+
+type Media {
+  createdAt: DateTime!
+  id: ID!
+  type: String!
+  updatedAt: DateTime!
+  url: String!
+}
+
+type Muscle {
+  createdAt: DateTime!
+  id: ID!
+  isPrimary: Boolean
+  name: String!
+  nameUk: String!
+  updatedAt: DateTime!
+}
+
+type Mutation {
+  addUserInfo(userInfo: AddUserInfo!): User!
+  changePassword(changePasswordInput: ChangePasswordInput!): User!
+  checkUsernameAvailability(username: String!): Boolean!
+  createExercise(createExerciseInput: CreateExerciseInput!): Exercise!
+  createTraining(createTrainingInput: CreateTrainingInput!): Training!
+  deleteAccount: Boolean!
+  deleteExerciseById(id: Int!): Boolean!
+  deleteUserAvatar: Boolean!
+  signIn(signInUser: SignInUser!): UserWithAccessToken!
+  signUp(signUpUser: SignUpUser!): UserWithAccessToken!
+  updateUserInfo(userInfo: ChangeUserInfo!): UserWithAccessToken!
+}
+
+type Query {
+  checkEmailUniqueness(email: String!): Boolean!
+  getExerciseById(id: Int!): Exercise
+  getExerciseTypes: [ExerciseType!]!
+  getExercises(getExercisesInput: GetExercisesInput): [Exercise!]!
+  getMuscles: [Muscle!]!
+  me: User!
+}
+
+type Set {
+  exercise: Exercise!
+  id: ID!
+  reps: Float
+  time: Float
+  weight: Float
+}
+
+input SignInUser {
+  email: String!
+  password: String!
+}
+
+input SignUpUser {
+  email: String!
+  fullName: String!
+  password: String!
+}
+
+type Training {
+  appointedAt: DateTime!
+  id: ID!
+  owner: User!
+  sets: [Set!]!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+type User {
+  avatar: Avatar!
+  avatars: [Avatar!]!
+  createdAt: DateTime!
+  email: String!
+  fullName: String!
+  gender: String!
+  height: Float
+  id: ID!
+  role: String!
+  updatedAt: DateTime!
+  username: String!
+  weight: Float
+}
+
+type UserWithAccessToken {
+  accessToken: String!
+  user: User!
+}

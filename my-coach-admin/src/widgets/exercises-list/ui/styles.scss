@@ -1,0 +1,11 @@
+tr.table-header > th {
+  @apply bg-white-light h-12;
+}
+
+.el-table {
+  @apply w-auto rounded-t-lg mt-5 mb-0;
+
+  .el-loading-mask {
+    @apply bg-white dark:bg-brown-dark;
+  }
+}

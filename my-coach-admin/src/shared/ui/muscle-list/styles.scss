@@ -1,0 +1,11 @@
+.muscles-container {
+  @apply flex flex-col my-2.5;
+
+  .muscle-list-title {
+    @apply mb-2 self-start;
+  }
+
+  .muscles-tags {
+    @apply flex;
+  }
+}

@@ -1,0 +1,23 @@
+.exercise-image {
+  @apply rounded-2xl w-24 h-14;
+}
+
+.exercise-row-tag {
+  @apply my-1 ml-0;
+}
+
+.names-column {
+  @apply inline truncate #{!important};
+
+  .el-link__inner {
+    @apply inline;
+  }
+}
+
+.type-column {
+  @apply truncate;
+}
+
+.dropdown-column > .cell {
+  @apply mr-8 text-clip;
+}

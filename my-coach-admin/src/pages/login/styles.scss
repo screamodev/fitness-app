@@ -1,0 +1,15 @@
+.login-page-wrapper {
+  @apply flex flex-col h-screen;
+
+  &-content {
+    @apply flex justify-between items-center h-full overflow-hidden lg:justify-center;
+
+    &-logo {
+      @apply w-2/3 h-full rounded-r-lg bg-[url('./assets/images/logo.jpg')] bg-cover lg:hidden;
+    }
+
+    &-form {
+      @apply flex mx-auto;
+    }
+  }
+}

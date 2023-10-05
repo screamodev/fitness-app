@@ -1,0 +1,19 @@
+.exercise-type-filter {
+  @apply flex-col items-start mr-5 lg:mr-0 lg:mb-6;
+
+  label {
+    @apply text-base;
+  }
+
+  .el-form-item__content {
+    @apply w-full;
+
+    .exercise-type-filter-select {
+      @apply w-[300px] lg:w-full;
+    }
+  }
+
+  .el-form-item__content {
+    @apply items-start mt-3;
+  }
+}

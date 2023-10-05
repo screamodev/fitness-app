@@ -1,0 +1,31 @@
+.muscles-checkbox {
+  @apply flex-col items-start mb-0 w-full mr-5 lg:mr-0;
+
+  label {
+    @apply text-base;
+  }
+
+  &-group {
+    @apply flex flex-col flex-wrap max-h-[140px] xxl:max-h-[160px];
+  }
+}
+
+.muscles-checkbox-group {
+  @apply xl:max-h-[150px];
+}
+
+.muscles-checkbox-group {
+  @apply lg:max-h-[180px];
+}
+
+.muscles-checkbox-group {
+  @apply md-lg:max-h-[280px];
+}
+
+.muscles-checkbox-group {
+  @apply md:max-h-[180px];
+}
+
+.muscles-checkbox-group {
+  @apply sm:flex-row sm:max-h-full;
+}

@@ -1,0 +1,41 @@
+.muscles-list-wrapper {
+  @apply w-96 xl:mt-4 xl:w-auto;
+
+  &-content {
+    @apply w-full mb-4;
+
+    &-tags {
+      @apply w-fit my-2;
+    }
+  }
+
+  span.required {
+    @apply ml-1 text-red-600;
+  }
+
+  .tag {
+    @apply my-1 ml-0;
+  }
+}
+
+.draggable-wrapper-main-muscles {
+  @apply min-h-[30px] min-w-[80px] max-h-[320px] flex flex-col flex-wrap xl:flex-row md:max-h-full;
+}
+
+.draggable-wrapper-additional-muscles {
+  @apply min-h-[30px] min-w-[80px] max-h-[300px] flex flex-col flex-wrap xl:flex-row md:max-h-full;
+}
+
+.main-muscles-label,
+.additional-muscles-label {
+  @apply md:text-sm;
+}
+
+.main-muscles-empty,
+.additional-muscles-empty {
+  @apply md:text-xs break-normal;
+}
+
+.tag:last-child {
+  @apply mr-1;
+}

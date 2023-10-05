@@ -1,0 +1,35 @@
+.stepper-wrapper {
+  @apply flex items-center justify-center h-full w-full;
+
+  &-form {
+    @apply w-full bg-white border border-gray-300 rounded-lg p-14 dark:bg-brown-dark dark:border-black lg:p-7;
+
+    &-content {
+      @apply py-7;
+
+      &-body {
+        @apply h-full min-h-[420px] flex justify-center mt-6;
+      }
+    }
+  }
+
+  .el-loading-mask {
+    @apply bg-white dark:bg-brown-dark;
+  }
+}
+
+.stepper-wrapper-form {
+  @apply sm:p-5;
+}
+
+.heading-step {
+  @apply hidden md:flex md:justify-center md:font-bold md:mt-7;
+}
+
+.el-step__main {
+  @apply xl:mr-2 md:hidden md:whitespace-nowrap;
+}
+
+.el-step__title {
+  @apply xl:leading-6 xl:mb-2;
+}

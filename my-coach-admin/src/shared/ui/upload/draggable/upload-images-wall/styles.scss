@@ -1,0 +1,38 @@
+.images-uploader {
+  @apply mt-4;
+
+  .el-upload-list.el-upload-list--picture-card {
+    @apply flex sm:flex-col;
+  }
+
+  .el-upload-list--picture-card {
+    @apply flex border-none;
+
+    .el-upload-list__item {
+      @apply w-60 last:mr-0 sm:mr-0 sm:w-full;
+    }
+  }
+
+  .el-upload.el-upload--picture-card.is-drag {
+    @apply w-60 sm:w-full mr-2 border-none;
+
+    .el-upload-dragger {
+      @apply p-0 flex flex-col items-center justify-center dark:bg-brown-dark h-40;
+    }
+  }
+
+  .el-upload-list__item.is-ready,
+  .el-upload-list__item.is-success {
+    @apply h-40;
+  }
+
+  .el-upload-list--picture .el-upload-list__item-thumbnail {
+    @apply hidden;
+  }
+}
+
+.images-uploader.upload-hidden
+  > .el-upload-list.el-upload-list--picture-card
+  > .el-upload.el-upload--picture-card.is-drag {
+  @apply hidden;
+}

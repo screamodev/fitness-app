@@ -1,0 +1,15 @@
+.cancel-button {
+  @apply relative bottom-2;
+
+  &-text {
+    @apply mr-3 md:hidden;
+  }
+
+  .el-icon {
+    @apply w-5 h-5;
+
+    .icon {
+      @apply w-5 h-5 fill-black-dark hover:fill-gray-600 dark:fill-white-dark dark:hover:fill-gray-400;
+    }
+  }
+}

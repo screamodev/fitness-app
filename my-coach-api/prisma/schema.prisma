@@ -1,0 +1,187 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               Int      @id @default(autoincrement())
+  email            String   @unique
+  fullName         String   @map("full_name")
+  password         String
+  role             Role     @default(trainee)
+  username         String   @unique
+  gender           Gender   @default(male)
+  height           Float?
+  weight           Float?
+  selectedAvatarId Int?     @unique @map("selected_avatar_id")
+  createdAt        DateTime @default(now()) @map("created_at")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  selectedAvatar UserAvatar?  @relation("selected_avatar", fields: [selectedAvatarId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  avatars        UserAvatar[]
+  Training       Training[]
+
+  @@map("users")
+}
+
+model UserAvatar {
+  id        Int      @id @default(autoincrement())
+  userId    Int      @map("user_id")
+  mediaId   Int      @map("media_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  media       Media @relation(fields: [mediaId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  user        User  @relation(fields: [userId], references: [id], onUpdate: Cascade)
+  avatarsUser User? @relation("selected_avatar")
+
+  @@map("users_avatars")
+}
+
+model Media {
+  id        Int       @id @default(autoincrement())
+  key       String    @unique
+  name      String
+  mimeType  String    @map("mime_type")
+  type      MediaType
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  avatars        UserAvatar[]
+  exerciseMedias ExerciseMedia[]
+
+  @@map("medias")
+}
+
+model Exercise {
+  id             Int      @id @default(autoincrement())
+  name           String
+  nameUk         String   @map("name_uk")
+  typeId         Int?     @map("type_id")
+  primaryImageId Int?     @unique @map("primary_image_id")
+  instruction    String?
+  instructionUk  String?  @map("instruction_uk")
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  primaryImage ExerciseMedia?     @relation("primary_image", fields: [primaryImageId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  exerciseType ExerciseType?      @relation(fields: [typeId], references: [id])
+  medias       ExerciseMedia[]
+  muscles      ExerciseMuscle[]
+  trainings    TrainingExercise[]
+
+  @@map("exercises")
+}
+
+model Set {
+  id     Int     @id @default(autoincrement())
+  reps   Int?
+  weight Float?
+  time   Int?
+
+  trainingExerciseId Int              @map("training_exercise_id")
+  trainingExercise   TrainingExercise @relation("sets", fields: [trainingExerciseId], references: [id])
+
+  @@map("sets")
+}
+
+model Training {
+  id          Int      @id @default(autoincrement())
+  appointedAt DateTime @map("appointed_at")
+  ownerId     Int      @map("user_id")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  owner User @relation(fields: [ownerId], references: [id])
+
+  exercises TrainingExercise[]
+
+  @@map("trainings")
+}
+
+model TrainingExercise {
+  id Int @id @default(autoincrement())
+
+  trainingId Int      @map("training_id")
+  training   Training @relation(fields: [trainingId], references: [id])
+
+  exerciseId Int      @map("exercise_id")
+  exercise   Exercise @relation(fields: [exerciseId], references: [id])
+
+  sets Set[] @relation("sets")
+
+  @@map("training_exercise")
+}
+
+model ExerciseMedia {
+  id         Int      @id @default(autoincrement())
+  exerciseId Int      @map("exercise_id")
+  mediaId    Int      @map("media_id")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  media          Media     @relation(fields: [mediaId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  exercise       Exercise  @relation(fields: [exerciseId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  exerciseMedias Exercise? @relation("primary_image")
+
+  @@map("exercise_media")
+}
+
+model ExerciseType {
+  id        Int      @id @default(autoincrement())
+  name      String
+  nameUk    String   @map("name_uk")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  exercises Exercise[]
+
+  @@map("exercise_types")
+}
+
+model Muscle {
+  id        Int      @id @default(autoincrement())
+  name      String
+  nameUk    String   @map("name_uk")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  exerciseMuscles ExerciseMuscle[]
+
+  @@map("muscles")
+}
+
+model ExerciseMuscle {
+  exerciseId Int      @map("exercise_id")
+  muscleId   Int      @map("muscle_id")
+  isPrimary  Boolean  @default(false) @map("is_primary")
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  exercise Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+  muscle   Muscle   @relation(fields: [muscleId], references: [id])
+
+  @@unique([exerciseId, muscleId])
+  @@map("exercise_muscle")
+}
+
+enum Role {
+  trainee
+  coach
+  admin
+}
+
+enum Gender {
+  male
+  female
+}
+
+enum MediaType {
+  image
+  video
+}

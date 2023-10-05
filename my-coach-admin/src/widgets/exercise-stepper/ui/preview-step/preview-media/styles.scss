@@ -1,0 +1,31 @@
+.preview-media-wrapper {
+  @apply flex flex-row flex-wrap;
+
+  &-block {
+    @apply w-64 h-36 mt-1.5 mr-3 overflow-hidden xl:w-48 xl:h-28;
+
+    &-video {
+      @apply rounded-lg border w-full;
+    }
+  }
+
+  &-block {
+    @apply sm:w-40 sm:h-24;
+  }
+
+  .image-block {
+    @apply flex justify-center w-64 h-36 mt-1.5 mr-3 relative rounded-lg border border-gray-300 overflow-hidden xl:w-48 xl:h-28;
+  }
+
+  .image-block {
+    @apply sm:w-40 sm:h-24;
+  }
+
+  .image-block:hover .icon {
+    @apply opacity-100;
+  }
+
+  &-blank-medias {
+    @apply self-start text-xs break-normal whitespace-normal;
+  }
+}

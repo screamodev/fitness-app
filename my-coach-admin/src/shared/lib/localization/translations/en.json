@@ -1,0 +1,199 @@
+{
+  "en": {
+    "admin": {
+      "title": "Admin"
+    },
+    "login": {
+      "title": "Login"
+    },
+    "exercises": {
+      "title": "Exercises",
+      "create": "Create exercise",
+      "empty": "No created exercises yet",
+      "filters": "Filters"
+    },
+    "users": {
+      "title": "Users"
+    },
+    "workouts": {
+      "title": "Workouts"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "link": "Go Home"
+    },
+    "exercise": {
+      "name": "Name",
+      "nameUk": "Name (uk)",
+      "type": "Type",
+      "instruction": "Instruction",
+      "instructionUk": "Instruction (uk)",
+      "muscles": "Muscles",
+      "mainMuscles": "Main muscles",
+      "additionalMuscles": "Additional muscles",
+      "media": "Media"
+    },
+    "createExercise": {
+      "title": "Create new exercise"
+    },
+    "exercisesFilter": {
+      "clear": "Clear filters",
+      "apply": "Apply"
+    },
+    "stepper": {
+      "mainInfoStep": {
+        "title": "Name & Image",
+        "description": "Add exercise name and image"
+      },
+      "selectMusclesStep": {
+        "title": "Muscles",
+        "description": "Add muscle group"
+      },
+      "instructionStep": {
+        "title": "Instruction",
+        "description": "Add instruction for exercise"
+      },
+      "uploadMediaStep": {
+        "title": "Media",
+        "description": "Add photos, video etc"
+      },
+      "previewStep": {
+        "title": "Preview",
+        "description": "Final check for exercise"
+      },
+      "emptyMainMuscles": "Chose muscles group on the image",
+      "emptyAdditionalMuscles": "Additional muscles are not selected"
+    },
+    "uploader": {
+      "image": {
+        "text": "Capture image or drag a file"
+      },
+      "video": {
+        "text": "Capture video or drag a file"
+      }
+    },
+    "confirms": {
+      "leavePage": {
+        "title": "Do you want to leave the page?",
+        "content": "Changes will not be saved"
+      },
+      "createExercise": {
+        "title": "Create the exercise?",
+        "content": "You will go to the exercise page"
+      }
+    },
+    "buttons": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "prev": "Previous",
+      "next": "Next",
+      "create": "Create",
+      "loading": "Loading..."
+    },
+    "placeholders": {
+      "email": "Enter email",
+      "password": "Enter password",
+      "exercise": {
+        "name": "Enter exercise's name",
+        "nameUk": "Enter exercise's name in Ukrainian",
+        "instruction": "Enter exercise instruction",
+        "instructionUk": "Enter exercise instruction in Ukrainian",
+        "blankInstruction": "No instruction added to this exercise",
+        "blankInstructionUk": "No instruction(uk) added to this exercise",
+        "blankMedia": "No medias were added to this exercise"
+      },
+      "exercises": {
+        "search": "Search",
+        "selectType": "Choose exercises types"
+      }
+    },
+    "labels": {
+      "email": "Email address",
+      "password": "Password",
+      "exercise": {
+        "name": "Name",
+        "nameUk": "Name (uk)",
+        "type": "Type",
+        "types": "Types",
+        "instruction": "Instruction",
+        "instructionUk": "Instruction (uk)",
+        "media": "Media"
+      },
+      "upload": {
+        "images": "Images:",
+        "video": "Video:"
+      }
+    },
+    "notifications": {
+      "unauthorized": {
+        "title": "Unauthorized",
+        "message": "Invalid credentials"
+      },
+      "exercise": {
+        "loadingFailure": {
+          "title": "Loading failure",
+          "message": "Unable to load the exercise"
+        },
+        "createFailure": {
+          "title": "Create failure",
+          "message": "Unable to create exercise"
+        },
+        "createSuccess": {
+          "title": "Create success",
+          "message": "Exercise was successfully created"
+        }
+      },
+      "exercises": {
+        "loadingFailure": {
+          "title": "Loading failure",
+          "message": "Unable to load the exercises"
+        }
+      },
+      "upload": {
+        "processingMediaFailure": {
+          "title": "Processing failed",
+          "message": "Failed to process media"
+        },
+        "addMediaFailure": {
+          "title": "Add media failure"
+        },
+        "removeImageFailure": {
+          "title": "Remove image failure",
+          "message": "Image not found"
+        }
+      }
+    },
+    "errors": {
+      "login": {
+        "email": {
+          "required": "Email is required!",
+          "notValid": "Must be a valid email"
+        },
+        "password": {
+          "required": "Password is required!"
+        }
+      },
+      "exercise": {
+        "name": {
+          "required": "Name is required!",
+          "minLength": "Must be at least 3 characters",
+          "maxLength": "Must be at most 100 characters"
+        },
+        "instruction": {
+          "maxLength": "Exceeded max length (400 chars)"
+        }
+      },
+      "upload": {
+        "readFailed": "File read error"
+      },
+      "dataFailed": {
+        "title": "Error loading data",
+        "subTitle": "Please, reload the page or try again later",
+        "message": "Unable to load exercise data"
+      }
+    }
+  }
+}

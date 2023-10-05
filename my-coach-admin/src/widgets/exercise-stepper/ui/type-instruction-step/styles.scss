@@ -1,0 +1,15 @@
+.form {
+  @apply flex flex-col w-2/3 sm:w-10/12;
+
+  .textarea-group {
+    @apply mt-2.5 flex flex-col justify-between;
+  }
+}
+
+.el-radio-group {
+  @apply lg:flex-col lg:items-start flex-wrap overflow-hidden;
+
+  .el-radio {
+    @apply whitespace-normal leading-5 sm:mb-2;
+  }
+}

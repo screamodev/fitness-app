@@ -1,0 +1,199 @@
+{
+  "uk": {
+    "admin": {
+      "title": "Адмін"
+    },
+    "login": {
+      "title": "Логін"
+    },
+    "exercises": {
+      "title": "Вправи",
+      "create": "Створити вправу",
+      "empty": "Ще немає створених вправ",
+      "filters": "Фільтри"
+    },
+    "users": {
+      "title": "Користувачі"
+    },
+    "workouts": {
+      "title": "Тренування"
+    },
+    "notFound": {
+      "title": "Сторінку Не Знайдено",
+      "link": "На Головну"
+    },
+    "exercise": {
+      "name": "Ім'я (en)",
+      "nameUk": "Ім'я",
+      "type": "Тип",
+      "instruction": "Інструкція (en)",
+      "instructionUk": "Інструкція",
+      "muscles": "М'язи",
+      "mainMuscles": "Основні м’язи",
+      "additionalMuscles": "Додаткові м’язи",
+      "media": "Медіа"
+    },
+    "createExercise": {
+      "title": "Створити нову вправу"
+    },
+    "exercisesFilter": {
+      "clear": "Очистити фільтр",
+      "apply": "Застосувати"
+    },
+    "stepper": {
+      "mainInfoStep": {
+        "title": "Ім'я & Зображення",
+        "description": "Додати назву та зображення вправи"
+      },
+      "selectMusclesStep": {
+        "title": "М'язи",
+        "description": "Додати групу м'язів"
+      },
+      "instructionStep": {
+        "title": "Інструкція",
+        "description": "Додати інструкцію до вправи"
+      },
+      "uploadMediaStep": {
+        "title": "Медіа",
+        "description": "Додати фото, відео т.п."
+      },
+      "previewStep": {
+        "title": "Прев'ю",
+        "description": "Фінальна перевірка вправи"
+      },
+      "emptyMainMuscles": "Оберіть групу м’язів на зображенні",
+      "emptyAdditionalMuscles": "Додаткових м’язів не обрано"
+    },
+    "uploader": {
+      "image": {
+        "text": "Завантажте картинку або перетягніть файл"
+      },
+      "video": {
+        "text": "Завантажте відео або перетягніть файл"
+      }
+    },
+    "confirms": {
+      "leavePage": {
+        "title": "Ви хочите покинути сторінку?",
+        "content": "Внесені зміни не будуть збережені"
+      },
+      "createExercise": {
+        "title": "Створити вправу?",
+        "content": "Ви перейдете на сторінку цієї вправи"
+      }
+    },
+    "buttons": {
+      "confirm": "Підтвердити",
+      "cancel": "Відміна",
+      "edit": "Редагувати",
+      "duplicate": "Продублювати",
+      "delete": "Видалити",
+      "prev": "Назад",
+      "next": "Вперед",
+      "create": "Створити",
+      "loading": "Завантаження..."
+    },
+    "placeholders": {
+      "email": "Введіть пошту",
+      "password": "Введіть пароль",
+      "exercise": {
+        "name": "Введіть назву вправи на англійській мові",
+        "nameUk": "Введіть назву вправи",
+        "instruction": "Введіть інструкцію по виконанню вправи на англійській мові",
+        "instructionUk": "Введіть інструкцію по виконанню вправи",
+        "blankInstruction": "До цієї вправи не додано жодної інструкції",
+        "blankInstructionUk": "До цієї вправи не додано жодної інструкції українською мовою",
+        "blankMedia": "Не додано жодних медіа до цієї вправи"
+      },
+      "exercises": {
+        "search": "Пошук",
+        "selectType": "Оберіть типи вправ"
+      }
+    },
+    "labels": {
+      "email": "Електронна пошта",
+      "password": "Пароль",
+      "exercise": {
+        "name": "Назва (en)",
+        "nameUk": "Назва",
+        "type": "Тип",
+        "types": "Типи",
+        "instruction": "Інструкція (en)",
+        "instructionUk": "Інструкція",
+        "media": "Медіа"
+      },
+      "upload": {
+        "images": "Зображення:",
+        "video": "Відео:"
+      }
+    },
+    "notifications": {
+      "unauthorized": {
+        "title": "Не авторизовано",
+        "message": "Неправильні облікові дані"
+      },
+      "exercise": {
+        "loadingFailure": {
+          "title": "Помилка завантаження",
+          "message": "Не вдалося завантажити вправу"
+        },
+        "createFailure": {
+          "title": "Помилка створення вправи",
+          "message": "Не вдалося створити вправу"
+        },
+        "createSuccess": {
+          "title": "Успішно створено",
+          "message": "Вправа була успішно створена"
+        }
+      },
+      "exercises": {
+        "loadingFailure": {
+          "title": "Помилка завантаження",
+          "message": "Не вдалося завантажити вправи"
+        }
+      },
+      "upload": {
+        "processingMediaFailure": {
+          "title": "Помилка обробки",
+          "message": "Помилка при обробці медіа-файлу"
+        },
+        "addMediaFailure": {
+          "title": "Помилка при додаванні медіа-файлу"
+        },
+        "removeImageFailure": {
+          "title": "Помилка видалення зображення",
+          "message": "Зображення не знайдено"
+        }
+      }
+    },
+    "errors": {
+      "login": {
+        "email": {
+          "required": "Email обов'язковий!",
+          "notValid": "Повинен бути валідний email"
+        },
+        "password": {
+          "required": "Пароль обов'язковий!"
+        }
+      },
+      "exercise": {
+        "name": {
+          "required": "Назва обов'язкова!",
+          "minLength": "Має бути принаймні 3 символи",
+          "maxLength": "Має бути не більше 100 символів"
+        },
+        "instruction": {
+          "maxLength": "Перевищено максимальну довжину (400 символів)."
+        }
+      },
+      "upload": {
+        "readFailed": "Помилка зчитування файлу"
+      },
+      "dataFailed": {
+        "title": "Помилка завантаження даних",
+        "subTitle": "Будь ласка, перезавантажте сторінку або спробуйте перейти пізніше",
+        "message": "Не вдається завантажити дані про вправи"
+      }
+    }
+  }
+}

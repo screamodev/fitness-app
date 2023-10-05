@@ -1,0 +1,11 @@
+.preview-row-wrapper {
+  @apply flex flex-col mb-3;
+
+  &-label {
+    @apply flex mb-2;
+
+    &-text {
+      @apply mr-1;
+    }
+  }
+}

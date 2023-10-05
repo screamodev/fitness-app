@@ -1,0 +1,15 @@
+.layout-container {
+  @apply flex flex-col justify-center items-center p-5;
+
+  .placeholder-text {
+    @apply break-normal;
+  }
+
+  .el-icon--upload {
+    @apply text-gray-neutral dark:text-body-light;
+  }
+}
+
+.uploader-placeholder-title {
+  @apply sm:break-normal sm:p-2.5;
+}
